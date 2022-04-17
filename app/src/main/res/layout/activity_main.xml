@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_M"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="#D1D1D1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_B"
+        tools:ignore="SpeakableTextPresentCheck,EditableContentDescCheck"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/input_B"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:autoSizeTextType="uniform"
+        android:background="#D1D1D1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/input_M"
+        app:layout_constraintStart_toEndOf="@+id/input_A"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:text="B" />
+
+    <Button
+        android:id="@+id/SimpleModulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/a_mod_b"
+        app:layout_constraintStart_toStartOf="@+id/input_A"
+        app:layout_constraintTop_toBottomOf="@+id/input_A"
+        app:layout_constraintWidth="100dp" />
+
+    <EditText
+        android:id="@+id/input_A"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="#D1D1D1"
+        android:ems="10"
+        android:hint="@string/a"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:textColorLink="#4D74FF"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:tooltipText="A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_B"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:text="A" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:background="#BCEAEC"
+        android:shadowColor="#595959"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textFontWeight="0"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
