@@ -12,8 +12,9 @@ public class ModuloPower {
      */
     public static long moduloPower(long a, long b, long m){
         long r = 1;
+        long aModm = a % m;
         for (int i = 0; i < b; i++) {
-            r = (r * a) % m;
+            r = (r * aModm) % m;
         }
         return r;
     }
