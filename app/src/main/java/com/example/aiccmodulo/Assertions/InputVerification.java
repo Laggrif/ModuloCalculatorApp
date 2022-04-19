@@ -9,6 +9,6 @@ public class InputVerification {
     }
 
     public static boolean InputIsNumber(CharSequence input){
-        return input
+        return Long.getLong(input.toString()).getClass() == Long.class;
     }
 }

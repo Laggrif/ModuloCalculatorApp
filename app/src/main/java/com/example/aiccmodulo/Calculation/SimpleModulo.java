@@ -1,6 +1,7 @@
 package com.example.aiccmodulo.Calculation;
 
 public class SimpleModulo {
+    private SimpleModulo(){}
 
     /**
      *
@@ -8,7 +9,8 @@ public class SimpleModulo {
      * @param m modulo
      * @return a mod m
      */
-    public static String simpleMod(long a, long m){
-        return Long.toString(a % m);
+    public static long simpleMod(long a, long m){
+        return a % m;
+
     }
 }

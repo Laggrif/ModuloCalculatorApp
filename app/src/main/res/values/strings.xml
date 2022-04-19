@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">AICC Modulo</string>
-    <string name="a_mod_b">a Mod b</string>
+    <string name="compute">Compute</string>
     <string name="m">M</string>
     <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="Default_long_value">0</string>
+    <string-array name="operationChoice">
+        <item>A mod B</item>
+        <item>Orders of M with multiplication</item>
+        <item>Orders of M with addition</item>
+        <item>gcd(A, B)</item>
+        <item>Extended Euclid of A and M</item>
+        <item>A power B mod M</item>
+    </string-array>
 </resources>
