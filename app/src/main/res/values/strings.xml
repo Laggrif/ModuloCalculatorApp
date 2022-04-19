@@ -10,7 +10,7 @@
         <item>Orders of M with multiplication</item>
         <item>Orders of M with addition</item>
         <item>gcd(A, B)</item>
-        <item>Extended Euclid of A and M</item>
+        <item>Extended Euclid of A and B</item>
         <item>A power B mod M</item>
     </string-array>
 </resources>

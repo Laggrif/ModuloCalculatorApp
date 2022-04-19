@@ -15,12 +15,12 @@ public class ExecuteButton {
     private ExecuteButton() {}
 
     public static void compute(Spinner spinner, TextView out, TextView inA, TextView inB, TextView inM){
-        long choice = spinner.getSelectedItemId();
-        long a = Long.parseLong(inA.getText().toString());
-        long b = Long.parseLong(inB.getText().toString());
-        long m = Long.parseLong(inM.getText().toString());
-
         try {
+            long choice = spinner.getSelectedItemId();
+            long a = Long.parseLong(inA.getText().toString());
+            long b = Long.parseLong(inB.getText().toString());
+            long m = Long.parseLong(inM.getText().toString());
+
             switch ((int) choice) {
                 case 0 :
                     out.setText(Long.toString(SimpleModulo.simpleMod(a, m)));
@@ -35,7 +35,7 @@ public class ExecuteButton {
                     out.setText(Long.toString(Euclid.gcd(a, b)));
                     break;
                 case 4 :
-                    out.setText(new Euclid(a, m).toString());
+                    out.setText(new Euclid(a, b).toString());
                     break;
                 case 5 :
                     out.setText(Long.toString(ModuloPower.moduloPower(a, b, m)));
