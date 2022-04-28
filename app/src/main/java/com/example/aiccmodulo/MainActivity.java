@@ -1,6 +1,5 @@
 package com.example.aiccmodulo;
 
-import android.annotation.SuppressLint;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -17,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button aModB = findViewById(R.id.SimpleModulo);
+        Button aModB = findViewById(R.id.ComputeButton);
 
         Spinner operationChoice = findViewById(R.id.operationChoice);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.operationChoice, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.operationChoice, R.layout.spinnertext);
+        adapter.setDropDownViewResource(R.layout.spinner_item);
         operationChoice.setAdapter(adapter);
+
 
         TextView a = findViewById(R.id.input_A);
         TextView b = findViewById(R.id.input_B);

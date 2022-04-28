@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:background="@drawable/rounded_corners"
+    android:textStyle="bold"
+    android:textSize="16dp"
+    android:gravity="center"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    >
+
+</TextView>
