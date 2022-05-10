@@ -2,9 +2,13 @@ package com.example.aiccmodulo.Calculation;
 
 public class Euclid {
     private final long[] uvd;
+    private final long a;
+    private final long b;
 
     public Euclid(long a, long b) {
         this.uvd = ExtendedEuclid(a, b);
+        this.a = a;
+        this.b = b;
     }
 
     private long[] ExtendedEuclid(long a, long b) {
@@ -25,7 +29,7 @@ public class Euclid {
     @Override
     public String toString(){
         StringBuilder string = new StringBuilder();
-        string.append("u = ").append(uvd[0]).append("   ||   v = ").append(uvd[1]).append("   ||   d = ").append(uvd[2]);
+        string.append(a).append(" x ").append(uvd[0]).append(" + ").append(b).append(" x ").append(uvd[1]).append(" = ").append(uvd[2]);
         return string.toString();
     }
 
